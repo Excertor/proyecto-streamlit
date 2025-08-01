@@ -29,7 +29,7 @@ try:
             st.write("Saliendo del Explorador de Datos Climáticos. ¡Hasta Luego!")
     elif opcion == 1:
           try:
-            ruta=st.file_uploader("Ingrese la ruta completa del archivo .csv con los datos climáticos: ", type="csv")
+            ruta=st.file_uploader("Ingrese la ruta del archivo .csv con los datos climáticos: ", type="csv")
             archivo = uno.opcion1(ruta)
           except Exception as d_e:
            st.error(f"Error: No se encontró el archivo .csv, en la ruta especificada: {d_e}")
@@ -67,4 +67,5 @@ try:
             
 
 except ValueError:
+
         st.error("Opción inválida. Por favor, seleccione una opción del menú.")
